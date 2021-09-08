@@ -6,9 +6,11 @@
 
 function myfunction(list, a, b){
 var newList =[];
-for(i = 1; i < list.length -1; i++){
+for(var i = a; i < b-1; i++){
     newList.push(list[i]);
+    
 }
+console.log(newList);
 return newList;
 }
 
@@ -16,6 +18,6 @@ return newList;
 
 
 
-var lista= ["ciao", "pippo", "ciccio", 1, 3, 5, 23];
+var lista= [1, 2, 3, 4, 5, 6, 7];
 
-console.log(myfunction(lista));
+console.log(myfunction(lista, 1, 7));
