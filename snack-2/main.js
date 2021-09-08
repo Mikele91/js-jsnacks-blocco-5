@@ -82,4 +82,4 @@ for( var i = 0; i<zucchineMin.length; i++){
     peso2 +=(zucchineMin[i]["peso"]);
 }
 console.log("il peso totale delle zucchine più lunghe è",peso1, "kg");
-console.log("il peso totale delle zucchine più corte è",peso2, "kg");
+console.log(`il peso totale delle zucchine più corte è ${peso2} kg`);
