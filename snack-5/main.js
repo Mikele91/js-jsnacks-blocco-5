@@ -6,7 +6,25 @@
 
 function myfunction(list, a, b){
 var newList =[];
-for(var i = a; i < b-1; i++){
+
+var min = 0;
+var max = 0;
+if(a<= b){
+    min= a;
+    max =b
+}else{
+    min= b;
+    max =a;
+}
+
+
+
+while(max> list.length -1) {
+    console.log("hai inserito un numero troppo grande");
+    max = prompt("inserisci un nuovo numero valido");
+}
+
+for(var i = min; i < max ; i++){
     newList.push(list[i]);
     
 }
@@ -16,8 +34,6 @@ return newList;
 
 
 
-
-
 var lista= [1, 2, 3, 4, 5, 6, 7];
 
-console.log(myfunction(lista, 1, 7));
+console.log(myfunction(lista, 4, 8));
